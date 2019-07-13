@@ -1,0 +1,43 @@
+package student;
+
+public class student {
+	
+	static  String rollno;
+     static String name;
+	static String dob;
+
+	 student(String rollno,String name,String dob) {
+		
+	
+		student.rollno=rollno;
+		student.name=name;
+		student.dob=dob;
+		
+	}
+	
+	public String getname(){
+	return name;}
+	
+	public String getrollno(){
+	return rollno;}
+	public String getdob() {
+		return dob;
+	}
+	
+	
+public static void main(String[] args)
+{
+	student s1=new student("151078","binu","12 jan 1998 ");
+	System.out.println("s1 name is:" +name);
+	System.out.println("s1 rollno:" +rollno);
+	System.out.println("s1 dob:" +dob);
+	student s2=new student("161079","venu","21 feb 1998");
+	
+     System.out.println("s2 name is:" +name);
+     System.out.println("s2 rollno:" +rollno);
+     System.out.println("s2 dob:" +dob);
+     		}
+}
+     	
+
+
