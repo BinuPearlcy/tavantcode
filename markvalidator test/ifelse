@@ -1,0 +1,18 @@
+Class ifelsedemotest 
+		{
+@test
+void test ()
+{
+ifelsedemo ie=new ifelsedemo();
+ int mark=32;
+boolean actual=ie.ispass(mark);
+boolean expected=false;
+assertEquals(actual,expected);
+@test
+void test(){
+ifelsedemo ie=new ifelsedemo()
+int mark =81;
+String actual=ie.markgrade(mark);
+String expected= "B";
+assertEquals(actuals,expected);
+	}
