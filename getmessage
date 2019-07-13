@@ -1,0 +1,16 @@
+package getmessage;
+
+public class getmessage {
+	public static void main(String []args)
+	{
+		String message=Getmessage();
+		System.out.println(message);
+	}
+	public static String Getmessage()
+	{
+		String msg ="Hello world through method";
+		return msg;
+		
+	}
+
+}
