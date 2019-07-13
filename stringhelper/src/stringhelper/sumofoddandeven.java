@@ -1,4 +1,4 @@
-package stringhelper;
+package sumofoddandeven;
 
  public class stringhelper {
 
