@@ -1,6 +1,8 @@
+package farenheitintocelsius;
 
-class FahrenheittoCelsius
-{
+import java.util.Scanner;
+
+class  farenheitintocelsius{
 	public static void main(String arg[])	
 	{
 	    double f,c;
