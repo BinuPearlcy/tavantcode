@@ -1,17 +1,21 @@
+package Day1;
 
-public class factorial {
-	
-public static void main(String []args)
+public class Fact 
+{
+	static int calculateFactorial(int n)
 	{
-		int number=7;
-		 int factorial=1;
-		 
-for(int i=1;i<=number;++i) {
-	factorial*=i;
-}	
-	System.out.printf("factorial of %d=%d ", number, factorial);
-	
-}
+		if(n == 0)
+			return 1;
+		else
+			return (n*calculateFactorial(n-1));
+	}
+	public static void main(String args[])
+	{
+		int fact = 1;
+		int numb = 2;
+		fact = calculateFactorial(numb);
+		System.out.println("factorial of " +numb+ " is:"+fact);
+	}
 }
 
 
