@@ -1,22 +1,22 @@
-package Day1;
-
-public class Fact 
-{
-	static int calculateFactorial(int n)
-	{
-		if(n == 0)
+import java.util.Scanner;
+public class Factorial {
+	
+	public int factorial(int no){
+		if(n >= 1)
+		{
+			return no*factorial(no-1);
+		}else {
 			return 1;
-		else
-			return (n*calculateFactorial(n-1));
+		}
 	}
-	public static void main(String args[])
-	{
-		int fact = 1;
-		int numb = 2;
-		fact = calculateFactorial(numb);
-		System.out.println("factorial of " +numb+ " is:"+fact);
+
+	public static void main(String[] args) {
+		Factorial factorial = new Factorial();
+		System.out.println("enter any positive no only avoid negative numbers : ");
+		Scanner a = new Scanner(System.in);
+		int n = a.nextInt();
+		int ans = factorial.fact(n);
+		
+		System.out.println("The factorial of a given number is : " +ans);
 	}
 }
-
-
-
