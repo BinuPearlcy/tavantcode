@@ -24,7 +24,7 @@
 					return("Grade D");
 				}	
 			}
-			return "";
+			return "invalid mark";
 		}
 		public static boolean isPass(int mark)
 		{
