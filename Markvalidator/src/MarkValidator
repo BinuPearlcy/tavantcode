@@ -1,7 +1,7 @@
-//src file
-	package ifelsedemo;
 
-	public class ifelsedemo
+	package MarkValidator;
+
+	public class markValidator
 	{
 		public static String markGrade(int mark)
 		{
