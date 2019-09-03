@@ -1,0 +1,18 @@
+Class markValidatortest 
+		{
+@test
+void test(){
+MarkValidator markvalidator=new MarkValidator();
+int mark =81;
+String actual=ie.markgrade(mark);
+String expected= "B";
+assertEquals(actuals,expected);
+@test
+void test ()
+{
+MarkValidator markvalidator=new MarkValidator();
+ int mark=32;
+boolean actual=markvalidator.ispass(mark);
+boolean expected=false;
+assertEquals(actual,expected);
+	}
