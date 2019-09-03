@@ -1,27 +1,22 @@
 package factorial;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
 
-class factorialtest {
+import org.junit.Test;
+
+public class FactorialTest {
 
 	@Test
-	public void test() {
-		
-		factorialtest helper=new factorialtest();
-		assertequals("5040",helper.factorialOfNumberSeven("number=7,factorial=1"));
-		
-	}
-
-	private void assertequals(String string, Object factorialOfNumberSeven) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private Object factorialOfNumberSeven(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	public void factorialValueTest() {
 	
+		int number=5;
+		Factorial factorial=new Factorial();
+               int actual= factorial.calculateFactorial(number);
+		int expected=120;
+		assertEquals(expected,actual);
+	}
 
 }
+
+
+
