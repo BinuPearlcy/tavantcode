@@ -1,4 +1,4 @@
-package sumofoddandeven;
+package sumofnumbers;
 
  public class stringhelper {
 
@@ -12,7 +12,7 @@ package sumofoddandeven;
 	 
 	for(i=0;i<=10;i++)
 	{
-		System.out.print("i");
+		
 		if(i%2==0)
 		{
 			
@@ -23,27 +23,11 @@ package sumofoddandeven;
 		{
 			sum1=sum1+i;
 		}
-		System.out.println("sum of even number:"+sum);
-		System.out.println("sum of odd numbers:"+sum1);
-	}
-}
-
-	public Object sumOfOddAndSumOfEvenNumber(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}	
-			
-
-}
-
-				
-			
-			
-			
-				
-			
 		
-				
+	}
+	System.out.println("\nsum of even number:"+sum);
+	System.out.println("\nsum of odd numbers:"+sum1);	
+}
+
 	
-
-
+	}	
