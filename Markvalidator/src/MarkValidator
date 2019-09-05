@@ -1,58 +1,55 @@
+package markvalidator;
 
-	package MarkValidator;
+import java.util.Scanner;
 
-	public class markValidator
+public class markValidator
+{
+	public static String markGrade(int mark)
 	{
-		public static String markGrade(int mark)
+		if(isPass(mark))
 		{
-			if(isPass(mark))
+			if(mark>90)
 			{
-				if(mark>90)
-				{
-					return("Grade A");
-				}
-				else if(mark>75)
-				{
-					return("Grade B");
-				}
-				else if(mark>60)
-				{
-					return("Grade C");
-				}
-				else
-				{
-					return("Grade D");
-				}	
+				return("Grade A mark is greater than 90");
 			}
-			return "invalid mark";
-		}
-		public static boolean isPass(int mark)
-		{
-			if(mark>=40)
+			else if(mark>75)
 			{
-				System.out.println("Youe'r PASS");
-				return true;
+				return("Grade B mark is greater tha 75");
+			}
+			else if(mark>60)
+			{
+				return("Grade C mark is greater than 60");
 			}
 			else
 			{
-				System.out.println("Youe'r FAIL");
-				return false;
-			}
+				return("Grade D");
+			}	
 		}
-		
-
-		public static void main(String[] args) 
+		return "invalid mark";
+	}
+	public static boolean isPass(int mark)
+	{
+		if(mark>=40)
 		{
-			System.out.println("Marks 95 \n Result: "+markGrade(95));
-			System.out.println();
-			System.out.println("Marks 85 \n Result: "+markGrade(85));
-			System.out.println();
-			System.out.println("Marks 65 \n Result: "+markGrade(65));
-			System.out.println();
-			System.out.println("Marks 55 \n Result: "+markGrade(55));
-			System.out.println();
-			System.out.println("Marks 35 \n Result: "+markGrade(35));
-			System.out.println();
+			System.out.println("Youe'r PASS");
+			return true;
 		}
-		
+		else
+		{
+			System.out.println("Youe'r FAIL");
+			return false;
+		}
+	}
+	
+
+	public static void main(String[] args) 
+	{ Scanner scanner=new Scanner(System.in) ;
+	System.out.println("enter the mark:");
+	int mark=scanner.nextInt();
+	System.out.println("grade is :" + markGrade( mark));
+	
+	}	
+	
+	}
+	
 
