@@ -1,8 +1,11 @@
-package farenheitintocelsius;
+package testconvertfarenheitintocelsius;
 
 import java.util.Scanner;
 
-class  farenheitintocelsius{
+public class testconvertfarenheitintocelsius 
+{
+
+
 	public static void main(String arg[])	
 	{
 	    double f,c;
