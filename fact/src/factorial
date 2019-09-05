@@ -15,7 +15,7 @@ public class Factorial {
 		System.out.println("enter any positive no only avoid negative numbers : ");
 		Scanner a = new Scanner(System.in);
 		int n = a.nextInt();
-		int ans = factorial.fact(n);
+		int ans = factorial.factorial(n);
 		
 		System.out.println("The factorial of a given number is : " +ans);
 	}
